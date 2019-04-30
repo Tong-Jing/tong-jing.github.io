@@ -3,8 +3,10 @@
 # 一、构建组件
 ## 1.1 组件基础
 一个组件由 template、data、computed、methods等选项组成。需要注意：
+
 - template 的 DOM 结构必须有根元素
 - data 必须是函数，数据通过 return 返回出去
+
 ```
 // 示例：定义一个组件 MyComponent
 var MyComponent = {{
@@ -16,6 +18,7 @@ var MyComponent = {{
   template: '<div>组件内容</div>'
 }
 ```
+
 由于 HTML 特性不区分大小写， 在使用`kebab-case`(小写短横线分隔命名) 定义组件时，引用也需要使用这个格式如 `<my-component>`来使用；在使用`PascalCase`(驼峰式命名) 定义组件时`<my-component>`和`<MyComponent>`这两种格式都可以引用。
  
 ## 1.2 单文件组件.vue 
